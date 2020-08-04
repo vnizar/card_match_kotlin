@@ -13,6 +13,7 @@ fun main(args: Array<String>) {
         override fun onInfoEvent(info: InfoMessage) {
             // everytime a card flipped you will get data about flipped card, EX:
             // { type: 'info', lastOpenedCard: 'seven-a', openedCardPos: 3, lastTurn: 'f6d11cbf-1e88' }
+            println(info)
         }
 
         override fun onTurnData(turnData: TurnMessage) {
